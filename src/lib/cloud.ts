@@ -28,12 +28,12 @@ export type CloudEpisode = {
   id: string; title: string; show: string | null; author: string | null;
   cover_url: string | null; audio_url: string | null; duration_sec: number | null;
   published_at: string | null; source_url: string | null; platform: string | null;
-  theme: string | null;
+  theme: string | null; summary: string | null;
 };
 
 export async function cloudLibrary(): Promise<CloudEpisode[]> {
   return sbGet<CloudEpisode>(
-    "episodes?select=id,title,show,author,cover_url,audio_url,duration_sec,published_at,source_url,platform,theme&limit=2000"
+    "episodes?select=id,title,show,author,cover_url,audio_url,duration_sec,published_at,source_url,platform,theme,summary&limit=2000"
   );
 }
 

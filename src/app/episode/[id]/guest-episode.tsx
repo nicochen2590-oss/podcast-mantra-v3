@@ -161,6 +161,7 @@ export function GuestEpisodeView({ id, seed, cloud }: { id: string; seed: Episod
             audio_url: episode.audio_url ?? null,
             duration_sec: episode.duration_sec ?? null,
             published_at: episode.published_at ?? null,
+            summary: episode.summary ?? null,
           } as unknown as Episode);
           setLoaded(true);
         } catch {
