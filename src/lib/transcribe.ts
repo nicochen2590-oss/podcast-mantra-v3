@@ -32,9 +32,15 @@ export function hasAsrKey() {
 }
 
 function ffmpegPath(): string {
-  // @ffmpeg-installer/ffmpeg 提供各平台静态二进制，Vercel(Linux) 与本机(Mac) 都能用
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  return require("@ffmpeg-installer/ffmpeg").path as string;
+  // 不依赖平台安装包（云端构建会解析失败），按环境变量 / 常见路径 / PATH 查找
+  if (process.env.PM_FFMPEG) return process.env.PM_FFMPEG;
+  for (const p of ["/opt/homebrew/bin/ffmpeg", "/usr/local/bin/ffmpeg", "/usr/bin/ffmpeg"]) {
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      if (require("node:fs").existsSync(p)) return p;
+    } catch { /* 忽略 */ }
+  }
+  return "ffmpeg";
 }
 
 /** 从音频直链按 [start, start+dur) 切一段 16k 单声道 wav，返回临时文件路径 */
