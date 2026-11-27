@@ -26,6 +26,7 @@ import {
   CANONICAL_TOPICS, canonicalTopic,
 } from "@/lib/guest/store";
 import { transcriptTextToSegments } from "@/lib/guest/transcript";
+import { cloudTranscript } from "@/lib/cloud";
 import demoAnalysis from "@/data/demo-analysis.json";
 import { attachTimecodes, buildMindmapFromSegments, type MindNode } from "@/lib/mindmap";
 
@@ -199,16 +200,15 @@ export function GuestEpisodeView({ id, seed, cloud }: { id: string; seed: Episod
     if (!stored) {
       void (async () => {
         try {
-          const res = await fetch(`/api/transcript/${encodeURIComponent(which)}`);
-          const j = await res.json();
+          const j = await cloudTranscript(which).then((r) => ({ found: !!r.transcript, ...r }));
           if (!j?.found) return;
-          const t = j.transcript ?? {};
+          const t = (j.transcript ?? {}) as Record<string, any>;
           if (Array.isArray(t.segments) && t.segments.length) setSegments(t.segments);
           if (t.article) setArticle(t.article);
           if (t.edited) setEdited(t.edited);
           if (Array.isArray(t.chapters)) setChapters(t.chapters);
           if (Array.isArray(t.insights) && t.insights.length) {
-            setTakeaways(t.insights.map((x: { title: string; content: string; start_ms: number; raw?: string }) => ({
+            setTakeaways((t.insights as { title: string; content: string; start_ms: number; raw?: string }[]).map((x) => ({
               title: x.title, explain: x.content, evidence: x.raw ?? "", start_ms: x.start_ms,
             })));
           }
