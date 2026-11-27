@@ -144,7 +144,32 @@ export function GuestEpisodeView({ id, seed, cloud }: { id: string; seed: Episod
             audience: (cloud.audience as string) ?? "",
           } as unknown as Episode)
         : null);
-    if (!base) { setEpisode(null); setLoaded(true); return; }
+    if (!base) {
+      // 静态部署时服务端没有数据，浏览器自己向云端取这一期
+      void (async () => {
+        try {
+          const { episode } = await cloudTranscript(which);
+          if (!episode) { setEpisode(null); setLoaded(true); return; }
+          setEpisode({
+            id: which,
+            title: episode.title ?? "未命名",
+            show: episode.show ?? "",
+            author: episode.author ?? "",
+            platform: episode.platform ?? "xiaoyuzhou",
+            source_url: episode.source_url ?? "",
+            cover_url: episode.cover_url ?? null,
+            audio_url: episode.audio_url ?? null,
+            duration_sec: episode.duration_sec ?? null,
+            published_at: episode.published_at ?? null,
+          } as unknown as Episode);
+          setLoaded(true);
+        } catch {
+          setEpisode(null);
+          setLoaded(true);
+        }
+      })();
+      return;
+    }
 
     const cached = readAudioCache(which);
     const merged = { ...base, ...readMeta(which), ...cached } as Episode;
