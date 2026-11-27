@@ -22,6 +22,7 @@ import { DailyPage } from "./daily-page";
 import { SearchPage } from "./search-page";
 import { FontSwitcher } from "./font-switcher";
 import ALBUM_MAP from "@/data/album-mapping.json";
+import { cloudLibrary } from "@/lib/cloud";
 import { mergeDuplicateTopics, normalizeAlbums, canonicalTopic, rebuildCanonicalAlbums, renameTopicById, CANONICAL_TOPICS } from "@/lib/guest/store";
 import { useSearchParams } from "next/navigation";
 import { LibraryStage } from "./library-stage";
@@ -231,9 +232,8 @@ export function DashboardClient({
   // 上线后所有人读云端清单；本机数据优先（本机有编辑过的元数据）
   useEffect(() => {
     let alive = true;
-    fetch("/api/library")
-      .then((r) => r.json())
-      .then((j) => { if (alive && Array.isArray(j.episodes)) setCloudEpisodes(j.episodes); })
+    cloudLibrary()
+      .then((list) => { if (alive && list.length) setCloudEpisodes(list as never); })
       .catch(() => { /* 离线时只用本机数据 */ });
     return () => { alive = false; };
   }, []);
