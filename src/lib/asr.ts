@@ -23,9 +23,21 @@ const CHUNK_SEC = Number(process.env.PM_ASR_CHUNK_SEC ?? 60);
 
 export { CHUNK_SEC };
 
+/**
+ * ffmpeg 路径：只在「本机转写」时用到，云端不会执行到。
+ * 不再 require 平台相关的安装包（Cloud 构建时解析不到会直接失败），
+ * 改成环境变量 / 常见路径 / PATH 里的 ffmpeg。
+ */
 function ffmpegPath(): string {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  return require("@ffmpeg-installer/ffmpeg").path as string;
+  if (process.env.PM_FFMPEG) return process.env.PM_FFMPEG;
+  const candidates = ["/opt/homebrew/bin/ffmpeg", "/usr/local/bin/ffmpeg", "/usr/bin/ffmpeg"];
+  for (const p of candidates) {
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      if (require("node:fs").existsSync(p)) return p;
+    } catch { /* 忽略 */ }
+  }
+  return "ffmpeg";
 }
 
 function venvPython(): string | null {
