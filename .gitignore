@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+.env.local
+.env*.local
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.vercel
+
+# 本地模型权重（1.5G，绝不入库）
+models/
+data/
