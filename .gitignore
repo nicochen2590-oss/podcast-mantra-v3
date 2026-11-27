@@ -11,3 +11,6 @@ next-env.d.ts
 # 本地模型权重（1.5G，绝不入库）
 /models/
 /data/
+
+# 静态产物
+/out/
