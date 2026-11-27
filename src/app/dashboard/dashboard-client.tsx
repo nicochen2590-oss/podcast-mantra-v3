@@ -23,6 +23,7 @@ import { SearchPage } from "./search-page";
 import { FontSwitcher } from "./font-switcher";
 import ALBUM_MAP from "@/data/album-mapping.json";
 import { cloudLibrary, cloudTranscriptIds } from "@/lib/cloud";
+import BUNDLED_TRANSCRIPTS from "@/data/bundled-transcripts.json";
 import { mergeDuplicateTopics, normalizeAlbums, canonicalTopic, rebuildCanonicalAlbums, renameTopicById, CANONICAL_TOPICS } from "@/lib/guest/store";
 import { useSearchParams } from "next/navigation";
 import { LibraryStage } from "./library-stage";
@@ -381,6 +382,7 @@ export function DashboardClient({
     const set = new Set<string>(Object.keys(GUEST_SEGMENTS));
     Object.keys(loadTranscriptMap()).forEach((id) => set.add(id));
     guestLib.episodes.forEach((e) => { if (e.transcript_status === "ready") set.add(e.id); });
+    Object.keys(BUNDLED_TRANSCRIPTS).forEach((id) => set.add(id));
     cloudTxIds.forEach((id) => set.add(id));
     return set;
     // eslint-disable-next-line react-hooks/exhaustive-deps

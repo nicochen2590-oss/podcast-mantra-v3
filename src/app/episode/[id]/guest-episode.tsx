@@ -27,6 +27,7 @@ import {
 } from "@/lib/guest/store";
 import { transcriptTextToSegments } from "@/lib/guest/transcript";
 import { cloudTranscript } from "@/lib/cloud";
+import BUNDLED from "@/data/bundled-transcripts.json";
 import demoAnalysis from "@/data/demo-analysis.json";
 import { attachTimecodes, buildMindmapFromSegments, type MindNode } from "@/lib/mindmap";
 
@@ -226,7 +227,10 @@ export function GuestEpisodeView({ id, seed, cloud }: { id: string; seed: Episod
     if (!stored) {
       void (async () => {
         try {
-          const j = await cloudTranscript(which).then((r) => ({ found: !!r.transcript, ...r }));
+          const bundled = (BUNDLED as Record<string, Record<string, unknown>>)[which];
+          const j = bundled
+            ? { found: true, transcript: bundled, episode: null }
+            : await cloudTranscript(which).then((r) => ({ found: !!r.transcript, ...r }));
           if (!j?.found) return;
           const t = (j.transcript ?? {}) as Record<string, any>;
           if (Array.isArray(t.segments) && t.segments.length) setSegments(t.segments);
