@@ -3,8 +3,12 @@
  * 部署到纯静态托管（EdgeOne Pages / OSS）时，没有服务端接口可用，
  * 页面自己用公开的 publishable key 读数据即可（两张表只开放了 select）。
  */
-const URL_BASE = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-const KEY = process.env.NEXT_PUBLIC_SUPABASE_KEY ?? "";
+// 兜底默认值：这两个是「公开只读」凭证，本来就会打进前端 JS，
+// 写在这里是为了避免托管平台构建时没注入环境变量导致读不到数据。
+const URL_BASE =
+  process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://aoaujvcrtvnauxdrtuuz.supabase.co";
+const KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_KEY ?? "sb_publishable_Td_y7jeM4TgF7DqmXHK1Mg_96I4eo27";
 
 export function cloudReady(): boolean {
   return Boolean(URL_BASE && KEY);
