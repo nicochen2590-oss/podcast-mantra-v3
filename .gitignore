@@ -9,5 +9,5 @@ next-env.d.ts
 .vercel
 
 # 本地模型权重（1.5G，绝不入库）
-models/
-data/
+/models/
+/data/

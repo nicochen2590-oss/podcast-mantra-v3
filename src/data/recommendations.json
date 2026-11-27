@@ -1,0 +1,522 @@
+{
+  "_说明": "公共推荐池：只放编辑挑过的公共内容，与用户本机收藏完全分开。",
+  "updated_at": "2026-11-24",
+  "items": [
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6afc3c6aa4a79edf137abc71",
+      "type": "播客",
+      "topic": "时事新闻",
+      "theme": "新闻与国际视野",
+      "reason": "方便面销量连年下滑，康师傅和统一却靠涨价和高端化在营收利润上双双增长，这反常识的账本值得算一算。",
+      "audience": "想了解当天世界在发生什么的人",
+      "content_type": "知识科普"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6afee6e3a4a79edf137bd0df",
+      "type": "播客",
+      "topic": "商业",
+      "theme": "商业与经济",
+      "reason": "咖啡店和披萨店都挤进汉堡赛道时，塔斯汀却反手做披萨，这个逆向操作背后的商业逻辑比汉堡本身更有嚼头。",
+      "audience": "关心生意、消费与职场规则的听众",
+      "content_type": "新闻资讯"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6b04bfa67db1d2bfcb9cda51",
+      "type": "播客",
+      "topic": "旅游",
+      "theme": "生活与日常",
+      "reason": "一道美墨墙隔开圣迭戈和蒂华纳，墙这边是大皮卡和大草坪，墙那边是赌场和夹大葱的Taco，两个世界只隔一条街。",
+      "audience": "通勤、做饭、散步时想听点轻松的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6ae4546797726cd4675a2ef0",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "文化与艺术",
+      "reason": "传统苏州蟹宴为什么不提倡客人自己动手剥蟹，这个讲究背后藏着江南饮食里一套被忽略的规矩和体面。",
+      "audience": "文学、电影、艺术爱好者",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6aeab42459687ba32065b789",
+      "type": "播客",
+      "topic": "社会观察",
+      "theme": "社会与人文",
+      "reason": "林戈声把城市生活里那种说不清道不明的细微异常叫作逢魔时刻，听这期你会发现自己也早就听见了那种杂音。",
+      "audience": "愿意多一个角度看社会的听众",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6af3e97ce3f66b332520c2d7",
+      "type": "播客",
+      "topic": "社会观察",
+      "theme": "情感与关系",
+      "reason": "李颖迪用自传体小说剖开家庭记忆，塞林格那句既有爱也有污秽凄苦，正是她书写自己来处时的全部诚实。",
+      "audience": "愿意多一个角度看社会的听众",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6b03752e490afb36cfc9a73a",
+      "type": "播客",
+      "topic": "人工智能",
+      "theme": "科技与互联网",
+      "reason": "华尔街量化巨头把市场当成纯粹的自然现象来研究，信奉肉身苦弱机械飞升，这群数学家和物理学家的AI之路比金融八卦更硬核。",
+      "audience": "想跟上 AI 与产品变化的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6af9bdf3fe62f8f52c4b9580",
+      "type": "播客",
+      "topic": "自我成长",
+      "theme": "心理与情绪",
+      "reason": "这期防PUA科普不盯着极端案例，而是回到日常关系里，提醒你操纵者未必有恶意，但每个人都可能正在做这件事。",
+      "audience": "在职业选择、效率与自我管理上找答案的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/69e733a31e94ae6921ca3320",
+      "type": "播客",
+      "topic": "自我成长",
+      "theme": "职场与成长",
+      "reason": "把助眠音乐和八小时睡眠装备混在一起聊，睡前听反而会想试试那个套床垫的东西。",
+      "audience": "在职业选择、效率与自我管理上找答案的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6afea817fe62f8f52c4d8b87",
+      "type": "播客",
+      "topic": "医疗健康",
+      "theme": "健康与运动",
+      "reason": "40岁生娃后身体变好，这个反常识的听友故事让人想知道她到底做对了什么。",
+      "audience": "关心身体、睡眠与日常健康的人",
+      "content_type": "知识科普"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6b0007aee8584be10824b898",
+      "type": "播客",
+      "topic": "英语学习",
+      "theme": "教育与学习",
+      "reason": "五天假期变成三周住院，跟着真实经历记单词，比背词表更记得住。",
+      "audience": "在学习方法、语言与教育上投入的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6af2df3ab4a4e20202f7ae55",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "历史与政治",
+      "reason": "父亲死于卡廷惨案，瓦伊达却用电影拍出波兰的伤痛，这层身世是理解他作品的钥匙。",
+      "audience": "对历史脉络与政治逻辑感兴趣的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://tk.wavpub.com/WPTK_wQ0OKoyBatDESEqN.m4a",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "个人叙事与陪伴",
+      "reason": "父母不识字、家境贫困的河北女孩，用十年求学路讲出农村孩子向上走的真实代价。",
+      "audience": "喜欢真实的人间故事的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.gcores.com/radios/222330",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "小众与新兴领域",
+      "reason": "《GTA6》还没发售就拿下TGA八项提名，这期周报把游戏圈的荒诞新闻一次讲清。",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://tk.wavpub.com/WPTK_xs32AFEOzIDJEKBB.m4a",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "悬疑与故事",
+      "reason": "凶手抓了、案子判了，真相却没来，这起三尸命案的反转让人重新想什么叫结案。",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://bowuzhi.typlog.io/episodes/lddwm",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "科学与自然",
+      "reason": "明清皇帝祭祀前先要算计一万八千个心眼，历代帝王庙里藏着一部权力博弈史。",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6b02d1d96f7bbb70cd5934a6",
+      "type": "播客",
+      "topic": "时事新闻",
+      "theme": "新闻与国际视野",
+      "reason": "390万人抢报国考，中公教育却被限制消费，热潮里龙头为何越活越难。",
+      "audience": "想了解当天世界在发生什么的人",
+      "content_type": "知识科普"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6afd8838a4a79edf137b420a",
+      "type": "播客",
+      "topic": "商业",
+      "theme": "商业与经济",
+      "reason": "英伟达营收翻倍却要换掉黄仁勋，董事会这步棋比财报更值得琢磨。",
+      "audience": "关心生意、消费与职场规则的听众",
+      "content_type": "新闻资讯"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/648f8666c442eecf6aaabe0c",
+      "type": "播客",
+      "topic": "旅游",
+      "theme": "生活与日常",
+      "reason": "芬兰人滑雪假连着过，蒸完热桑拿再和邻居比烤肉肠，日子原来能这样安排。",
+      "audience": "通勤、做饭、散步时想听点轻松的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6b054f1401b0ab432edd8643",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "文化与艺术",
+      "reason": "一本阿拉伯语杂志捅出秘密军售，里根差点因此下台，四十年后仍像谍战片。",
+      "audience": "文学、电影、艺术爱好者",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6afd2349e8584be108249fd2",
+      "type": "播客",
+      "topic": "社会观察",
+      "theme": "社会与人文",
+      "reason": "李沧东让两个不可能相交的家庭共浴危险水域，影评人拆解他藏在镜头里的阶级暗线。",
+      "audience": "愿意多一个角度看社会的听众",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a461de82e335a35a80cf3a1",
+      "type": "播客",
+      "topic": "学习提升",
+      "theme": "情感与关系",
+      "reason": "为几块钱纠结的人，纠结的可能是小时候菜市场边上的那个下午。",
+      "audience": "在学习方法、语言与教育上投入的人",
+      "content_type": "知识科普"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6ae27fabe9f449d465057f00",
+      "type": "播客",
+      "topic": "人工智能",
+      "theme": "科技与互联网",
+      "reason": "Vitalik亲口讲AI安全背后的哲学账本，以及EA如何在SBF崩塌后重建信誉。",
+      "audience": "想跟上 AI 与产品变化的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6accde4b195d838e2af0c9e9",
+      "type": "播客",
+      "topic": "自我成长",
+      "theme": "心理与情绪",
+      "reason": "殡葬策划师说行业普遍不在乎逝者尊严，一场让所有前男友参加的葬礼长什么样。",
+      "audience": "在职业选择、效率与自我管理上找答案的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6972e1d5109824f9e11161b1",
+      "type": "播客",
+      "topic": "自我成长",
+      "theme": "职场与成长",
+      "reason": "孟岩和许哲两个聪明人凑在一起，聊的却是'没有更好的生活'这种扎心话题。",
+      "audience": "在职业选择、效率与自我管理上找答案的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6af0834a5b7c4709bfe2f7d8",
+      "type": "播客",
+      "topic": "医疗健康",
+      "theme": "健康与运动",
+      "reason": "从闪了腰的医生视角拆解《疼痛难免》，看看年轻医生的累到底有多真实。",
+      "audience": "关心身体、睡眠与日常健康的人",
+      "content_type": "知识科普"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6ad70ccd336a696d21b6f774",
+      "type": "播客",
+      "topic": "英语学习",
+      "theme": "教育与学习",
+      "reason": "别再觉得寒暄是浪费时间，这期告诉你small talk如何变成社交资本。",
+      "audience": "在学习方法、语言与教育上投入的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://tk.wavpub.com/WPTK_hZ3Ov5XWafTt6dvT.m4a",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "个人叙事与陪伴",
+      "reason": "一个母亲发现丈夫性侵女儿后如何选择，熟人作案占七成的数据背后是真实讲述。",
+      "audience": "喜欢真实的人间故事的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.gcores.com/radios/222538",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "小众与新兴领域",
+      "reason": "玩过《GTA6》的人亲口聊通关感受，无剧透但能听出R星到底强在哪。",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://tk.wavpub.com/WPTK_LEzCIbF9s4YTuHl0.m4a",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "悬疑与故事",
+      "reason": "钱德勒的冷笑话背后，马修·派瑞的人生和另外五位主演完全不同。",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://bowuzhi.typlog.io/episodes/246",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "科学与自然",
+      "reason": "杭州博物馆这个展览被主播称为'好久没看过这么推荐的'，具体好在哪听完就知道。",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6af4432c3caef3b52f5439c5",
+      "type": "播客",
+      "topic": "时事新闻",
+      "theme": "新闻与国际视野",
+      "reason": "京东想让用户追短剧时顺手买同款，华为星芒首款AI手机也在路上。",
+      "audience": "想了解当天世界在发生什么的人",
+      "content_type": "新闻资讯"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6af30ecbb4a4e20202f7c772",
+      "type": "播客",
+      "topic": "商业",
+      "theme": "商业与经济",
+      "reason": "九阳利润跌七成而同源公司SharkNinja在美连涨，同一门生意为何两样结局。",
+      "audience": "关心生意、消费与职场规则的听众",
+      "content_type": "新闻资讯"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6ad69a6b51558d1e2b99bd42",
+      "type": "播客",
+      "topic": "旅游",
+      "theme": "生活与日常",
+      "reason": "樊老师在莫言高密没见高粱地，却在克拉科夫看见作家与城市互相塑造。",
+      "audience": "通勤、做饭、散步时想听点轻松的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6ae9a8d3c96c8942ec16aeb7",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "文化与艺术",
+      "reason": "南齐只存续二十余年，却催生永明声律与竟陵八友，萧赜如何撑起文学爆发。",
+      "audience": "文学、电影、艺术爱好者",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6aed507c5b7c4709bfe1e595",
+      "type": "播客",
+      "topic": "社会观察",
+      "theme": "社会与人文",
+      "reason": "十五岁辍学进电子厂，他在缝纫机旁背唐诗，揣着工体开唱的梦漂到北京。",
+      "audience": "愿意多一个角度看社会的听众",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6abdd499e742e36efcbd5ea3",
+      "type": "播客",
+      "topic": "自我成长",
+      "theme": "情感与关系",
+      "reason": "佟晨洁与梵一如对谈，拆解亲密关系里牺牲与不甘心如何悄悄累积。",
+      "audience": "在职业选择、效率与自我管理上找答案的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6ac821ae848a38b151b0d593",
+      "type": "播客",
+      "topic": "人工智能",
+      "theme": "科技与互联网",
+      "reason": "模型榜单分数节节高，商家用AI却仍要反复解释兜底，差距卡在哪一环。",
+      "audience": "想跟上 AI 与产品变化的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6aa989439d3264778169bb1c",
+      "type": "播客",
+      "topic": "自我成长",
+      "theme": "心理与情绪",
+      "reason": "抗癌博主阿娇不愿被当病人看待，却成了千万人投射生死焦虑的对象。",
+      "audience": "在职业选择、效率与自我管理上找答案的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6735c8cef373fe5d4d46858e",
+      "type": "播客",
+      "topic": "自我成长",
+      "theme": "职场与成长",
+      "reason": "一期计划外录制的节目，两位故人隔了许久重聚，交换各自真实的成长与改变。",
+      "audience": "在职业选择、效率与自我管理上找答案的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6ad093c10e4e410a05bd54fe",
+      "type": "播客",
+      "topic": "医疗健康",
+      "theme": "健康与运动",
+      "reason": "小路大夫教你用手机复诊时怎么筛平台，连哪些坑要自己鉴别都讲清楚了。",
+      "audience": "关心身体、睡眠与日常健康的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a1d7c347460cabdeb5965b5",
+      "type": "播客",
+      "topic": "学习提升",
+      "theme": "教育与学习",
+      "reason": "把“我有病”当成免罪牌的心理机制，这期拆得让人一边点头一边心虚。",
+      "audience": "在学习方法、语言与教育上投入的人",
+      "content_type": "知识科普"
+    },
+    {
+      "url": "https://etw.fm/2231",
+      "type": "播客",
+      "topic": "时事新闻",
+      "theme": "新闻与国际视野",
+      "reason": "两个没留在大城市的年轻人，用镜头记录下被主流叙事忽略的另一面中国。",
+      "audience": "想了解当天世界在发生什么的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6aab19a081ffdf7c5a796400",
+      "type": "播客",
+      "topic": "旅游",
+      "theme": "生活与日常",
+      "reason": "从“天命”到“眼泪之路”，这趟美西之旅让你看见原住民仍生活在另一个美国。",
+      "audience": "通勤、做饭、散步时想听点轻松的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6adb27a497726cd4675696ad",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "文化与艺术",
+      "reason": "一封侨批背后是横跨曼谷、香港与汕头的汇兑网络，比电影里的故事更复杂。",
+      "audience": "文学、电影、艺术爱好者",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6ad8934751558d1e2b8be354",
+      "type": "播客",
+      "topic": "社会观察",
+      "theme": "社会与人文",
+      "reason": "杨潇和王凡柯聊记忆如何被风景与文字重构，听完想立刻翻开那本六百页的书。",
+      "audience": "愿意多一个角度看社会的听众",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6ab9d38f863c97e2d31452df",
+      "type": "播客",
+      "topic": "人工智能",
+      "theme": "科技与互联网",
+      "reason": "给大模型出题、卖题、判卷的公司估值半年涨十倍，这行野蛮生长到什么程度？。",
+      "audience": "想跟上 AI 与产品变化的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6abe88fa195d838e2aec7934",
+      "type": "播客",
+      "topic": "医疗健康",
+      "theme": "健康与运动",
+      "reason": "妈妈被诊所骗走三万、她追回两万八的全过程，就是一份现成的维权操作指南。",
+      "audience": "关心身体、睡眠与日常健康的人",
+      "content_type": "知识科普"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a0436eae1eb34a939521ac9",
+      "type": "播客",
+      "topic": "学习提升",
+      "theme": "教育与学习",
+      "reason": "当一杯20块的奶茶比任何承诺都更确定，这期拆解了消费如何变成情绪锚。",
+      "audience": "在学习方法、语言与教育上投入的人",
+      "content_type": "知识科普"
+    },
+    {
+      "url": "https://etw.fm/2229",
+      "type": "播客",
+      "topic": "时事新闻",
+      "theme": "新闻与国际视野",
+      "reason": "欧阳艳琴用十年亲历回答：教育不再兑换文凭时，普通年轻人还能带走什么。",
+      "audience": "想了解当天世界在发生什么的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a9695b8f03e74ee6b034594",
+      "type": "播客",
+      "topic": "旅游",
+      "theme": "生活与日常",
+      "reason": "从王阳明格竹失败讲到宁波商帮出山，一条山路串起这座城的文脉。",
+      "audience": "通勤、做饭、散步时想听点轻松的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.ximalaya.com/sound/1033036763",
+      "type": "播客",
+      "topic": "人文",
+      "theme": "文化与艺术",
+      "reason": "乔治和伦尼的卑微梦想，让'人字的结构就是相互支撑'有了血肉。",
+      "audience": "文学、电影、艺术爱好者",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a97a0793c03b556ab863e7d",
+      "type": "播客",
+      "topic": "社会观察",
+      "theme": "社会与人文",
+      "reason": "一场卧室烟草甲大军围剿战，听科普作者讲人为何休想摆脱虫。",
+      "audience": "愿意多一个角度看社会的听众",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6aac803b33358a0f3816f282",
+      "type": "播客",
+      "topic": "人工智能",
+      "theme": "科技与互联网",
+      "reason": "敢把钱包交给AI吗？圆桌把Agent交易的信任难题摊开算了一笔账。",
+      "audience": "想跟上 AI 与产品变化的人",
+      "content_type": "知识科普"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/69fdccfd1b7bd50295bcdf33",
+      "type": "播客",
+      "topic": "学习提升",
+      "theme": "教育与学习",
+      "reason": "外表阳光、内在绝望的人还保留着行动力，这恰是微笑型抑郁最危险处。",
+      "audience": "在学习方法、语言与教育上投入的人",
+      "content_type": "知识科普"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6ae16a4497726cd46758df37",
+      "type": "播客",
+      "topic": "社会观察",
+      "theme": "社会与人文",
+      "reason": "光伏和电池便宜下来后，环保与增长这道二选一题第一次有了新解法。",
+      "audience": "愿意多一个角度看社会的听众",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://podcast.latepost.com/189",
+      "type": "播客",
+      "topic": "人工智能",
+      "theme": "科技与互联网",
+      "reason": "当所有人说预训练无聊时，他为何认为AI制药的规模化才刚拉开序幕。",
+      "audience": "想跟上 AI 与产品变化的人",
+      "content_type": "深度访谈"
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a93e755a0210c197dca6ffc",
+      "type": "播客",
+      "topic": "社会观察",
+      "theme": "社会与人文",
+      "reason": "失智老人忘了儿女却记得老歌，社会学者告诉你丧失与保留的真实边界。",
+      "audience": "愿意多一个角度看社会的听众",
+      "content_type": "深度访谈"
+    }
+  ]
+}
