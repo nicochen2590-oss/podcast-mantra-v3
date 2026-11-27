@@ -44,3 +44,10 @@ export async function cloudTranscript(id: string): Promise<{ episode: CloudEpiso
   ]);
   return { episode: eps[0] ?? null, transcript: rows[0] ?? null };
 }
+
+
+/** 云端哪些期已经有逐字稿（用来在列表里标记"已成文"） */
+export async function cloudTranscriptIds(): Promise<string[]> {
+  const rows = await sbGet<{ episode_id: string }>("transcripts?select=episode_id&limit=2000");
+  return rows.map((r) => r.episode_id);
+}

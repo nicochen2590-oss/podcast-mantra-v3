@@ -22,7 +22,7 @@ import { DailyPage } from "./daily-page";
 import { SearchPage } from "./search-page";
 import { FontSwitcher } from "./font-switcher";
 import ALBUM_MAP from "@/data/album-mapping.json";
-import { cloudLibrary } from "@/lib/cloud";
+import { cloudLibrary, cloudTranscriptIds } from "@/lib/cloud";
 import { mergeDuplicateTopics, normalizeAlbums, canonicalTopic, rebuildCanonicalAlbums, renameTopicById, CANONICAL_TOPICS } from "@/lib/guest/store";
 import { useSearchParams } from "next/navigation";
 import { LibraryStage } from "./library-stage";
@@ -228,6 +228,7 @@ export function DashboardClient({
   const [hiddenEps, setHiddenEps] = useState<string[]>([]);
   const [hiddenTopics, setHiddenTopics] = useState<string[]>([]);
   const [cloudEpisodes, setCloudEpisodes] = useState<typeof initialEpisodes>([]);
+  const [cloudTxIds, setCloudTxIds] = useState<string[]>([]);
 
   // 上线后所有人读云端清单；本机数据优先（本机有编辑过的元数据）
   useEffect(() => {
@@ -235,6 +236,9 @@ export function DashboardClient({
     cloudLibrary()
       .then((list) => { if (alive && list.length) setCloudEpisodes(list as never); })
       .catch(() => { /* 离线时只用本机数据 */ });
+    cloudTranscriptIds()
+      .then((ids) => { if (alive && ids.length) setCloudTxIds(ids); })
+      .catch(() => { /* 忽略 */ });
     return () => { alive = false; };
   }, []);
 
@@ -377,9 +381,10 @@ export function DashboardClient({
     const set = new Set<string>(Object.keys(GUEST_SEGMENTS));
     Object.keys(loadTranscriptMap()).forEach((id) => set.add(id));
     guestLib.episodes.forEach((e) => { if (e.transcript_status === "ready") set.add(e.id); });
+    cloudTxIds.forEach((id) => set.add(id));
     return set;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [guestLib, localMeta, txNonce]);
+  }, [guestLib, localMeta, txNonce, cloudTxIds]);
 
   const topicMap = useMemo(() => Object.fromEntries(topics.map((t) => [t.id, t])), [topics]);
   const markedCount = useMemo(() => episodes.filter((e) => (e.rating && e.rating > 0) || e.note?.trim()).length, [episodes]);
